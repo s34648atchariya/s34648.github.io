@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ประวัติส่วนตัว - อัจฉริยา โกฏแก้ว</title>
+    <style>
+        /* ตั้งค่าตัวแปรสี โทนเทา-ทอง */
+        :root {
+            --dark-gray: #1a1a1a;
+            --mid-gray: #333333;
+            --light-gray: #f9f9f9;
+            --gold: #d4af37;
+        }
+
+        body {
+            background-color: var(--mid-gray); /* พื้นหลังสีเทาเข้มให้กล่องเนื้อหาดูเด่น */
+            color: var(--dark-gray);
+            font-family: 'Sarabun', 'Segoe UI', Tahoma, sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            line-height: 1.8;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* กล่องเนื้อหาหลัก */
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background-color: #ffffff;
+            padding: 50px;
+            border-top: 8px solid var(--gold);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            border-radius: 10px;
+        }
+
+        /* หัวข้อ */
+        h1 {
+            color: var(--dark-gray);
+            text-align: center;
+            font-size: 32px;
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            color: var(--dark-gray);
+            border-bottom: 2px solid var(--gold);
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+
+        .icon { color: var(--gold); margin-right: 10px; }
+
+        /* การจัดเรียงเนื้อหาเป็น 2 คอลัมน์สำหรับหน้าจอใหญ่ */
+        .grid-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .grid-info {
+                grid-template-columns: 1fr; /* ปรับเป็นคอลัมน์เดียวในมือถือ */
+            }
+        }
+
+        /* กล่องเป้าหมายการศึกษา (เน้นเป็นพิเศษ) */
+        .highlight-box {
+            background-color: var(--light-gray);
+            border-left: 5px solid var(--gold);
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 0 5px 5px 0;
+        }
+
+        /* กลุ่มปุ่มกดด้านล่าง */
+        .btn-group {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+            border-top: 1px solid #eeeeee;
+            padding-top: 30px;
+        }
+
+        /* ดีไซน์ปุ่ม */
+        .btn {
+            background-color: #ffffff;
+            color: var(--dark-gray);
+            padding: 12px 25px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            border: 2px solid var(--dark-gray);
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .btn.next {
+            background-color: var(--dark-gray);
+            color: var(--gold);
+            border-color: var(--dark-gray);
+        }
+
+        /* เอฟเฟกต์ตอนชี้เมาส์ */
+        .btn:hover {
+            background-color: var(--dark-gray);
+            color: var(--gold);
+        }
+        .btn.next:hover {
+            background-color: var(--gold);
+            color: var(--dark-gray);
+            border-color: var(--gold);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1><span class="icon">⚖️</span>ประวัติส่วนตัว</h1>
+        
+        <!-- ข้อมูลทั่วไป -->
+        <div class="grid-info">
+            <div>
+                <h2><span class="icon">👤</span>ข้อมูลพื้นฐาน</h2>
+                <p><strong>ชื่อ-นามสกุล:</strong> นางสาวอัจฉริยา โกฏแก้ว</p>
+                <p><strong>วัน/เดือน/ปีเกิด:</strong> 01 มกราคม 25XX</p>
+                <p><strong>โรงเรียนปัจจุบัน:</strong> โรงเรียน... (ใส่ชื่อโรงเรียน)</p>
+                <p><strong>แผนการเรียน:</strong> ศิลป์-คำนวณ / ศิลป์-ภาษา / วิทย์-คณิต</p>
+            </div>
+            
+            <div>
+                <h2><span class="icon">🌟</span>ไลฟ์สไตล์</h2>
+                <p><strong>นิสัยส่วนตัว:</strong> เป็นคนมีความรับผิดชอบสูง มีเหตุมีผล รับฟังความคิดเห็นของผู้อื่น และชอบความยุติธรรม</p>
+                <p><strong>งานอดิเรก:</strong> ติดตามข่าวสารบ้านเมือง, อ่านหนังสือจิตวิทยาและคดีความ, โต้วาที</p>
+                <p><strong>ความสนใจพิเศษ:</strong> กฎหมายมหาชน, สิทธิมนุษยชน, การเมืองการปกครอง</p>
+            </div>
+        </div>
+
+        <!-- เป้าหมายการศึกษา -->
+        <div class="highlight-box">
+            <h2 style="margin-top: 0;"><span class="icon">🏛️</span>เป้าหมายระดับอุดมศึกษา</h2>
+            <p><strong>มหาวิทยาลัยที่มุ่งหวัง:</strong> มหาวิทยาลัยธรรมศาสตร์ / จุฬาลงกรณ์มหาวิทยาลัย (ปรับแก้ได้ตามต้องการ)</p>
+            <p><strong>คณะที่อยากเข้าศึกษา:</strong> คณะนิติศาสตร์</p>
+            <p style="margin-bottom: 0;"><strong>เหตุผลที่อยากเข้าศึกษา (Motivation):</strong> 
+            "ดิฉันมีความมุ่งมั่นที่จะเป็นนักกฎหมายที่ผดุงความยุติธรรมให้กับสังคม เพราะเชื่อว่ากฎหมายคือบรรทัดฐานสำคัญที่ช่วยรักษาสิทธิและเสรีภาพของประชาชน ดิฉันต้องการนำความรู้ทางนิติศาสตร์ไปใช้ในการช่วยเหลือผู้ที่เข้าไม่ถึงกระบวนการยุติธรรม และมีส่วนร่วมในการพัฒนาสังคมให้มีความเท่าเทียมมากยิ่งขึ้น"</p>
+        </div>
+
+        <!-- ปุ่มกดเปลี่ยนหน้า -->
+        <div class="btn-group">
+            <!-- เปลี่ยนลิงก์ index.html เป็นชื่อไฟล์หน้าแรกของคุณ -->
+            <a href="index.html" class="btn">⬅️ กลับหน้าแรก</a>
+            
+            <!-- เปลี่ยนลิงก์ page3.html เป็นชื่อไฟล์หน้าที่ 3 ของคุณ -->
+            <a href="page3.html" class="btn next">หน้าต่อไป (ผลงาน) ➡️</a>
+        </div>
+    </div>
+
+</body>
+</html>
