@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ติดต่อฉัน - อัจฉริยา โกฏแก้ว</title>
+    <style>
+        /* ==============================
+           โค้ดตกแต่ง (CSS)
+        ============================== */
+        
+        :root {
+            --dark-gray: #1a1a1a;
+            --mid-gray: #333333;
+            --light-gray: #f4f4f4;
+            --gold: #d4af37;
+        }
+
+        body {
+            background-color: var(--mid-gray);
+            color: var(--dark-gray);
+            font-family: 'Sarabun', 'Segoe UI', Tahoma, sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            line-height: 1.8;
+            display: flex;
+            justify-content: center;
+            align-items: center; /* จัดให้อยู่กึ่งกลางหน้าจอแนวตั้ง */
+            min-height: 90vh;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background-color: var(--light-gray);
+            padding: 50px;
+            border-top: 8px solid var(--gold);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+            border-radius: 10px;
+            text-align: center; /* จัดตัวอักษรให้อยู่กึ่งกลาง */
+        }
+
+        h1 {
+            color: var(--dark-gray);
+            font-size: 32px;
+            margin-top: 0;
+            border-bottom: 2px solid var(--gold);
+            display: inline-block;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+
+        .contact-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 auto 40px auto;
+            text-align: left;
+            display: inline-block; /* ทำให้กล่องข้อมูลอยู่กึ่งกลาง */
+        }
+
+        .contact-item {
+            font-size: 18px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-icon {
+            font-size: 24px;
+            margin-right: 15px;
+        }
+
+        .contact-link {
+            color: var(--dark-gray);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .contact-link:hover {
+            color: var(--gold);
+        }
+
+        .closing-text {
+            font-size: 18px;
+            color: #555555;
+            margin-bottom: 40px;
+            font-style: italic;
+        }
+
+        /* ปุ่มกดเปลี่ยนหน้า */
+        .btn-group {
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid #cccccc;
+            padding-top: 30px;
+        }
+
+        .btn {
+            background-color: #ffffff;
+            color: var(--dark-gray);
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            border: 2px solid var(--dark-gray);
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .btn.home {
+            background-color: var(--dark-gray);
+            color: var(--gold);
+            border-color: var(--dark-gray);
+        }
+
+        .btn:hover {
+            background-color: var(--dark-gray);
+            color: var(--gold);
+        }
+        
+        .btn.home:hover {
+            background-color: var(--gold);
+            color: var(--dark-gray);
+            border-color: var(--gold);
+        }
+
+        @media (max-width: 500px) {
+            .btn-group {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ==============================
+         โค้ดโครงสร้าง (HTML)
+    ============================== -->
+    <div class="container">
+        
+        <h1>📞 ช่องทางการติดต่อ</h1>
+
+        <ul class="contact-list">
+            <!-- เบอร์โทรศัพท์ -->
+            <li class="contact-item">
+                <span class="contact-icon">📱</span>
+                <span><strong>Phone:</strong> <a href="tel:0957167083" class="contact-link">095-716-7083</a></span>
+            </li>
+            
+            <!-- อีเมล -->
+            <li class="contact-item">
+                <span class="contact-icon">✉️</span>
+                <span><strong>Email:</strong> <a href="mailto:atchariyaa1604@gmail.com" class="contact-link">atchariyaa1604@gmail.com</a></span>
+            </li>
+
+            <!-- Facebook -->
+            <li class="contact-item">
+                <span class="contact-icon">📘</span>
+                <span><strong>Facebook:</strong> <a href="https://www.facebook.com/search/top?q=Atchariya%20Kodkaew" target="_blank" class="contact-link">Atchariya Kodkaew</a></span>
+            </li>
+
+            <!-- Instagram -->
+            <li class="contact-item">
+                <span class="contact-icon">📸</span>
+                <span><strong>Instagram:</strong> <a href="https://www.instagram.com/aomatchariya_" target="_blank" class="contact-link">aomatchariya_</a></span>
+            </li>
+        </ul>
+
+        <div class="closing-text">
+            "ขอบพระคุณคณะกรรมการทุกท่านที่กรุณาสละเวลา<br>รับชมแฟ้มสะสมผลงานของดิฉันค่ะ"
+        </div>
+
+        <!-- ปุ่มกดเปลี่ยนหน้า -->
+        <div class="btn-group">
+            <!-- ลิงก์กลับไปหน้าที่ 3 (ผลงาน) -->
+            <a href="page3.html" class="btn">⬅️ กลับหน้าผลงาน</a>
+            
+            <!-- ลิงก์กลับไปหน้าแรก (Home) -->
+            <a href="index.html" class="btn home">🏠 กลับสู่หน้าแรก</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
