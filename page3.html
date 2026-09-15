@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ผลงานของฉัน - อัจฉริยา โกฏแก้ว</title>
+    <style>
+        /* ==============================
+           โค้ดตกแต่ง (CSS)
+        ============================== */
+        
+        /* ตั้งค่าตัวแปรสี โทนเทา-ทอง */
+        :root {
+            --dark-gray: #1a1a1a;
+            --mid-gray: #333333;
+            --light-gray: #f4f4f4;
+            --gold: #d4af37;
+        }
+
+        body {
+            background-color: var(--mid-gray); /* พื้นหลังสีเทาเข้ม */
+            color: var(--dark-gray);
+            font-family: 'Sarabun', 'Segoe UI', Tahoma, sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            line-height: 1.8;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* กล่องเนื้อหาหลัก */
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background-color: var(--light-gray);
+            padding: 40px;
+            border-top: 8px solid var(--gold);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+            border-radius: 10px;
+        }
+
+        /* หัวข้อ */
+        h1 {
+            color: var(--dark-gray);
+            text-align: center;
+            font-size: 32px;
+            margin-top: 0;
+            border-bottom: 2px solid var(--gold);
+            display: inline-block;
+            padding-bottom: 10px;
+            margin-bottom: 40px;
+        }
+        
+        .header-container {
+            text-align: center;
+        }
+
+        /* รูปแบบการ์ดผลงาน */
+        .card {
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(212, 175, 55, 0.2); /* เงาสีทองอ่อนๆ */
+            border-color: var(--gold);
+        }
+
+        /* ช่องใส่รูปภาพ */
+        .card-img {
+            width: 100%;
+            height: 300px;
+            background-color: #eaeaea;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 3px solid var(--gold);
+        }
+
+        .card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* เนื้อหาคำบรรยาย */
+        .card-content {
+            padding: 25px;
+        }
+
+        .card-content h3 {
+            color: var(--dark-gray);
+            font-size: 24px;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .card-content p {
+            color: #555555;
+            text-align: justify;
+            margin: 0;
+        }
+
+        /* ปุ่มกดเปลี่ยนหน้า */
+        .btn-group {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+            border-top: 1px solid #cccccc;
+            padding-top: 30px;
+        }
+
+        .btn {
+            background-color: #ffffff;
+            color: var(--dark-gray);
+            padding: 12px 25px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            border: 2px solid var(--dark-gray);
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .btn.next {
+            background-color: var(--dark-gray);
+            color: var(--gold);
+            border-color: var(--dark-gray);
+        }
+
+        .btn:hover {
+            background-color: var(--dark-gray);
+            color: var(--gold);
+        }
+        
+        .btn.next:hover {
+            background-color: var(--gold);
+            color: var(--dark-gray);
+            border-color: var(--gold);
+        }
+
+        /* ปรับให้รองรับหน้าจอคอมพิวเตอร์ (รูปอยู่ซ้าย ข้อความอยู่ขวา) */
+        @media (min-width: 768px) {
+            .card {
+                flex-direction: row;
+            }
+            .card-img {
+                width: 40%;
+                height: auto;
+                min-height: 250px;
+                border-bottom: none;
+                border-right: 3px solid var(--gold);
+            }
+            .card-content {
+                width: 60%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ==============================
+         โค้ดโครงสร้าง (HTML)
+    ============================== -->
+    <div class="container">
+        
+        <div class="header-container">
+            <h1>⚖️ ผลงานและกิจกรรมที่โดดเด่น</h1>
+        </div>
+
+        <!-- ผลงานที่ 1: ร้องประสานเสียง -->
+        <div class="card">
+            <div class="card-img">
+                <!-- เปลี่ยนลิงก์ด้านล่างเป็นรูปของคุณ -->
+                <img src="https://via.placeholder.com/600x400?text=Chinese+Choir" alt="ร้องประสานเสียงภาษาจีน">
+            </div>
+            <div class="card-content">
+                <h3>กิจกรรมร้องประสานเสียงภาษาจีน</h3>
+                <p>ได้เข้าร่วมเป็นส่วนหนึ่งของวงขับร้องประสานเสียงภาษาจีนของโรงเรียน กิจกรรมนี้ไม่เพียงแต่ช่วยพัฒนาทักษะด้านภาษาจีนและการออกเสียงให้ถูกต้อง แต่ยังสอนให้ดิฉันได้เรียนรู้ศิลปะของการทำงานเป็นทีม การรับฟังผู้อื่น และการหลอมรวมเสียงของทุกคนให้เป็นหนึ่งเดียว การฝึกซ้อมอย่างหนักเพื่อเตรียมแสดงบนเวทีในงานสำคัญของโรงเรียน ช่วยหล่อหลอมให้ดิฉันมีความอดทน มีวินัย และสามารถรับมือกับความกดดันได้เป็นอย่างดี ซึ่งเป็นทักษะที่สำคัญอย่างยิ่งในการศึกษาด้านนิติศาสตร์</p>
+            </div>
+        </div>
+
+        <!-- ผลงานที่ 2: ผู้นำเชียร์ -->
+        <div class="card">
+            <div class="card-img">
+                <img src="https://via.placeholder.com/600x400?text=Cheerleader" alt="ผู้นำเชียร์สี">
+            </div>
+            <div class="card-content">
+                <h3>ผู้นำเชียร์สี (กีฬาสีประจำปี)</h3>
+                <p>ได้รับความไว้วางใจให้ทำหน้าที่เป็นผู้นำเชียร์ (Cheerleader) ในงานแข่งขันกีฬาสีประจำปีของโรงเรียน หน้าที่นี้ต้องใช้ความเป็นผู้นำ ความคิดสร้างสรรค์ในการออกแบบท่าเต้น และทักษะการบริหารจัดการคนจำนวนมากให้ทำงานร่วมกันอย่างมีประสิทธิภาพ ดิฉันได้เรียนรู้วิธีการแก้ปัญหาเฉพาะหน้า การสื่อสารเพื่อสร้างแรงจูงใจให้เพื่อนร่วมทีม รวมถึงความสามัคคีที่ทำให้โชว์ออกมาสมบูรณ์แบบที่สุด ประสบการณ์นี้ตอกย้ำให้เห็นถึงศักยภาพในการเป็นผู้นำและการทำงานร่วมกับผู้อื่น</p>
+            </div>
+        </div>
+
+        <!-- ผลงานที่ 3: เกียรติบัตร 1 -->
+        <div class="card">
+            <div class="card-img">
+                <img src="https://via.placeholder.com/600x400?text=Certificate+1" alt="เกียรติบัตรใบที่ 1">
+            </div>
+            <div class="card-content">
+                <h3>เกียรติบัตร: รางวัลผลการเรียนดีเด่น</h3>
+                <p>เกียรติบัตรฉบับนี้ได้รับจากการรักษาผลการเรียนในระดับยอดเยี่ยมอย่างต่อเนื่อง เป็นเครื่องยืนยันถึงความมุ่งมั่น ตั้งใจ และความรับผิดชอบในการศึกษาเล่าเรียนของดิฉัน ดิฉันเชื่อเสมอว่ารากฐานของความรู้ที่มั่นคง เกิดจากความมีวินัยและการแสวงหาความรู้อย่างไม่หยุดนิ่ง รางวัลนี้จึงเป็นแรงผลักดันสำคัญให้ดิฉันพัฒนาศักยภาพของตนเองต่อไป เพื่อเตรียมความพร้อมสำหรับการศึกษาในระดับอุดมศึกษาที่เข้มข้น โดยเฉพาะอย่างยิ่งในคณะนิติศาสตร์ที่ต้องอาศัยความละเอียดรอบคอบ</p>
+            </div>
+        </div>
+
+        <!-- ผลงานที่ 4: เกียรติบัตร 2 -->
+        <div class="card">
+            <div class="card-img">
+                <img src="https://via.placeholder.com/600x400?text=Certificate+2" alt="เกียรติบัตรใบที่ 2">
+            </div>
+            <div class="card-content">
+                <h3>เกียรติบัตร: เข้าร่วมการแข่งขันตอบปัญหาวิชาการ</h3>
+                <p>ได้รับคัดเลือกเป็นตัวแทนโรงเรียนเข้าร่วมการแข่งขันตอบปัญหาวิชาการ (หรือใส่ชื่อรายการแข่งขันจริง) การเตรียมตัวสำหรับงานนี้ทำให้ดิฉันได้ฝึกฝนทักษะการค้นคว้าข้อมูล การวิเคราะห์เนื้อหาเชิงลึก และกระบวนการคิดอย่างเป็นเหตุเป็นผล นอกจากนี้ยังได้เรียนรู้การทำงานร่วมกับเพื่อนร่วมทีมภายใต้ข้อจำกัดของเวลาและความกดดัน แม้จะมีความท้าทายมากมาย แต่ประสบการณ์ครั้งนี้ช่วยเปิดมุมมองใหม่ๆ และพัฒนาไหวพริบในการแก้ไขปัญหาได้อย่างยอดเยี่ยม</p>
+            </div>
+        </div>
+
+        <!-- ผลงานที่ 5: เกียรติบัตร 3 -->
+        <div class="card">
+            <div class="card-img">
+                <img src="https://via.placeholder.com/600x400?text=Certificate+3" alt="เกียรติบัตรใบที่ 3">
+            </div>
+            <div class="card-content">
+                <h3>เกียรติบัตร: กิจกรรมจิตอาสาและบำเพ็ญประโยชน์</h3>
+                <p>ได้รับมอบเกียรติบัตรจากการเข้าร่วมโครงการจิตอาสา (หรือใส่ชื่อโครงการ) ซึ่งเปิดโอกาสให้ดิฉันได้ลงพื้นที่ทำกิจกรรมที่เป็นประโยชน์ต่อชุมชนและสังคมส่วนรวม กิจกรรมนี้สอนให้ดิฉันตระหนักถึงคุณค่าของการให้ การแบ่งปัน และความเห็นอกเห็นใจผู้อื่น (Empathy) ซึ่งเป็นหัวใจสำคัญของนักกฎหมายที่ดี ดิฉันตั้งปณิธานไว้ว่าจะนำความรู้ทางกฎหมายที่จะได้รับในอนาคต มาเป็นเครื่องมือในการช่วยเหลือสังคมและผดุงความยุติธรรมให้กับผู้ที่เสียเปรียบ</p>
+            </div>
+        </div>
+
+        <!-- ปุ่มกดเปลี่ยนหน้า -->
+        <div class="btn-group">
+            <!-- ลิงก์กลับไปหน้าที่ 2 -->
+            <a href="page2.html" class="btn">⬅️ หน้าก่อนหน้า (ประวัติส่วนตัว)</a>
+            
+            <!-- ลิงก์ไปหน้าที่ 4 (ช่องทางติดต่อ) -->
+            <a href="page4.html" class="btn next">หน้าต่อไป (ช่องทางติดต่อ) ➡️</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
